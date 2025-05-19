@@ -11,6 +11,11 @@ export class UsersService {
     newUser.id = uuidv4();
     newUser.password = bcryptHashSync(newUser.password, 10);
     this.users.push(newUser);
-    console.log(this.users);
+  }
+
+  findByUsername(username: string): UserDto | null {
+    // console.log(this.users);
+    // console.log('Procurando por:', username);
+    return this.users.find((user) => user.username === username);
   }
 }

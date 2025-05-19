@@ -6,7 +6,7 @@ export class TaskService {
   private tasks: TaskDto[] = [];
 
   findById(id: string): TaskDto {
-    console.log(this.tasks);
+    // console.log(this.tasks);
     const foundTask = this.tasks.filter((t) => String(t.id) === id);
     if (foundTask.length) {
       return foundTask[0];
@@ -36,7 +36,7 @@ export class TaskService {
 
   create(task: TaskDto) {
     this.tasks.push(task);
-    console.log(this.tasks);
+    // console.log(this.tasks);
     return task;
   }
 
