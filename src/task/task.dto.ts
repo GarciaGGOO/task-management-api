@@ -35,6 +35,14 @@ export class TaskDto {
 
   @IsDateString()
   expirationDate: Date;
+
+  @IsDateString()
+  @IsOptional()
+  createdAt: Date;
+
+  @IsDateString()
+  @IsOptional()
+  updatedAt: Date;
 }
 
 export interface FindAllParameters {

@@ -3,4 +3,6 @@ export class UserDto {
   email: string;
   username: string;
   password: string;
+  createdAt: Date;
+  updatedAt: Date;
 }
