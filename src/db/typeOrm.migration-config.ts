@@ -1,7 +1,6 @@
 import { ConfigService } from '@nestjs/config';
 import { config } from 'dotenv';
 import { DataSource, DataSourceOptions } from 'typeorm';
-import { TaskTable1747740581312 } from './migrations/1747740581312-task-table';
 
 config();
 
